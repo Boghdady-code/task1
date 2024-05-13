@@ -9,6 +9,7 @@ export class NoNumbersDirective {
   constructor() { }
   @HostListener ('keydown', ['$event'])
   @HostListener ('paste', ['$event']) 
+  @HostListener ('drop', ['$event'])
    onKeydown(event: KeyboardEvent) {
     if(event.key.match(/\d+/g)) {
       event.preventDefault(); 

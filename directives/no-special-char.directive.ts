@@ -9,6 +9,7 @@ export class NoSpecialCharDirective {
   constructor() { }
   @HostListener ('keydown', ['$event'])
   @HostListener ('paste', ['$event']) 
+  @HostListener('drop', ['$event'])
    onKeydown(event: KeyboardEvent)  {
 
     console.log(event)
